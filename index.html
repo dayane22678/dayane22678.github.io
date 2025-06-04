@@ -1,78 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day Criações Digitais</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #fff0f7;
     }
-
     header {
-      background-color: #1a1a1a;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
+      background-color: #fdd0e8;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-
-    .logo {
-      font-size: 22px;
+    header img {
+      max-height: 80px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
       font-weight: bold;
     }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
     }
-
-    .buttons {
+    .hero h1 {
+      color: #d46aa5;
+    }
+    .blocos {
       display: flex;
-      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
     }
-
-    .buttons a {
-      padding: 8px 16px;
-      text-decoration: none;
-      color: white;
-      border: 1px solid white;
-      border-radius: 4px;
-      transition: background 0.3s;
+    .bloco {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
     }
-
-    .buttons a:hover {
-      background-color: white;
-      color: #1a1a1a;
-    }
-
-    .highlight {
+    footer {
       background-color: #fdd0e8;
-      color: black;
-      border: none;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
-
-    .highlight:hover {
-      background-color: #fbb7db;
+    .btn-whats {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 20px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">Day Criações Digitais</div>
+    <img src="Logo%20Moderno%20Day%20Cria%C3%A7%C3%B5es%20Digitais.png" alt="Logo Day Criações Digitais">
     <nav>
-      <a href="#">Produtos</a>
-      <a href="#">Recursos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
     </nav>
-    <div class="buttons">
-      <a href="#">Fazer Login</a>
-      <a href="#" class="highlight">Comece Agora</a>
-    </div>
   </header>
+
+  <section class="hero">
+    <h1>Bem-vinda ao site da Dayane Rodrigues dos Santos</h1>
+    <p>Transformando ideias em presença digital encantadora!</p>
+    <a class="btn-whats" href="https://wa.me/5511947824140" target="_blank">Fale comigo no WhatsApp</a>
+  </section>
+
+  <section id="servicos" class="blocos">
+    <div class="bloco">
+      <h2>Identidade Visual</h2>
+      <p>Criação de logotipos e paletas de cores que refletem sua marca.</p>
+    </div>
+    <div class="bloco">
+      <h2>Artes para Instagram</h2>
+      <p>Posts criativos e personalizados para destacar seu negócio.</p>
+    </div>
+    <div class="bloco">
+      <h2>Cartões Digitais</h2>
+      <p>Seu contato profissional em um clique, bonito e funcional.</p>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>© 2025 Day Criações Digitais — Todos os direitos reservados.</p>
+    <p>Siga no Instagram: <a href="https://instagram.com" target="_blank">@daycriacoesdigitais</a></p>
+  </footer>
 
 </body>
 </html>
